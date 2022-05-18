@@ -39,55 +39,6 @@ public class ProductDTO {
     @NotNull(message = "Product availability must be defined")
     private Boolean is_available;
 
-
-    /*public ProductDTO(String code, String name, BigDecimal price_hrk, String description, Boolean is_available) {
-        this.code = code;
-        this.name = name;
-        this.price_hrk = price_hrk;
-        this.description = description;
-        this.is_available = is_available;
-    }*/
-
-    /*public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public BigDecimal getPrice_hrk() {
-        return price_hrk;
-    }
-
-    public void setPrice_hrk(BigDecimal price_hrk) {
-        this.price_hrk = price_hrk;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Boolean getIs_available() {
-        return is_available;
-    }
-
-    public void setIs_available(Boolean is_available) {
-        this.is_available = is_available;
-    }*/
-
     public Product toProduct() {
         return Product.builder()
                 .code(code)
